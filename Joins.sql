@@ -1,4 +1,4 @@
-// joins carPart and seller in pictures  
+// joins CarPart and seller in pictures  
 SELECT Pictures.PicturesID, Sallers.FirstName, Sallers.zipcode, CarPart.TypeOfPart, Pictures.Photo, CarPart.Cost
 FROM ((Pictures
 INNER JOIN Sallers ON Sallers.SallersID = Sallers.SallersID)
