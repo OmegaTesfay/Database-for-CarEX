@@ -4,7 +4,7 @@ FROM ((Pictures
 INNER JOIN Sallers ON Sallers.SallersID = Sallers.SallersID)
 INNER JOIN CarPart ON CarPart.CarPartID = CarPart.CarPartID);
 
-// joins carpart in Partner
+// joins Carpart in Partner
 
 SELECT Partner.PartnerID, Partner.CampanyName, Partner.Campanyreview,CarPart.TypeOfPart, CarPart.Cost
 FROM Partner
