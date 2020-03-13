@@ -11,6 +11,12 @@ FROM Partner
 INNER JOIN CarPart ON CarPart.CarPartID=CarPart.CarPartID;
 
 
+// joins Seller and carPart in pictures 
+
+SELECT  Pictures.PicturesID, Sallers.FirstName, Sallers.zipcode, CarPart.TypeOfPart,  CarPart.Cost
+FROM ((Pictures
+INNER JOIN Sallers ON Sallers.SallersID = Sallers.SallersID)
+INNER JOIN CarPart ON CarPart.CarPartID = CarPart.CarPartID);
 
 
 
